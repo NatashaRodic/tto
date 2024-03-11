@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 50px;
+
+}
+
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+
+}
+
+#board div {
+    border: pink 5px solid;
+    text-align: center;
+}
+
+.blueBox {
+    border: 5px solid green !important;
+}
+
+.blueBox:after {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\274c";
+    /* use the hex value here... */
+    font-size: 50px;
+    color: #FFF;
+    line-height: 100px;
+    text-align: center;
+}
