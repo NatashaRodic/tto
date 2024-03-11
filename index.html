@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>TIC TAC TOE</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -25,10 +26,28 @@
         </div>
         <button>Reset</button>
     </main>
+
+    <div id="bg"></div>
     <script src="script.js"></script>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js
+        "></script>
 
+    <canvas class="background"></canvas>
+
+    <script>
+        window.onload = function () {
+            Particles.
+                init
+                ({
+                    selector:
+                        '.background',
+                    color: '#DA0463',
+
+                });
+        };
+    </script>
 </body>
 
 </html>

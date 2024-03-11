@@ -73,7 +73,7 @@ function renderMessage() {
     console.log("Winner:", winner);
     console.log("Turn:", turn);
     if (winner === "T") {
-        message.innerText = "I's a Tie!"
+        message.innerText = "It's a Tie!"
     }
     else if (winner) {
         message.innerHTML = `<span>${players[winner].toUpperCase()}</span> Wins!`;
