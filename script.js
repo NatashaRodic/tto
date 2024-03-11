@@ -57,9 +57,12 @@ function renderBoard() {
     board.forEach((field, idx) => {
         const fieldEl = document.getElementById(`f${idx}`)
         //console.log(fieldEl)
-        fieldEl.style.backgroundColor = players[field]
+        //this is for only adding color
+        //fieldEl.style.backgroundColor = players[field]
         if (players[field] === "blue") {
             fieldEl.classList.add("blueBox");
+        } else if (players[field] === "pink") {
+            fieldEl.classList.add("pinkBox");
         }
     })
 }
