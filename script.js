@@ -135,6 +135,10 @@ function checkWinner() {
 // 6) Handle a player clicking the replay button
 //   6.1) Do steps 4.1 (initialize the state variables) and 4.2 (render).
 function reset() {
-    init()
+    init();
+    const squares = [...document.querySelectorAll('#board > div')];
+    squares.forEach(field => {
+        field.classList.remove("blueBox")
+    })
 }
 play.addEventListener('click', reset)
