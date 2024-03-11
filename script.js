@@ -2,8 +2,8 @@
 //1) Define required constants
 // Constants //
 const players = {
-    "1": "pink",
-    "-1": "blue",
+    "1": "pizza",
+    "-1": "avocado",
     "null": "white"
 }
 
@@ -59,10 +59,10 @@ function renderBoard() {
         //console.log(fieldEl)
         //this is for only adding color
         //fieldEl.style.backgroundColor = players[field]
-        if (players[field] === "blue") {
-            fieldEl.classList.add("blueBox");
-        } else if (players[field] === "pink") {
-            fieldEl.classList.add("pinkBox");
+        if (players[field] === "avocado") {
+            fieldEl.classList.add("avocadoBox");
+        } else if (players[field] === "pizza") {
+            fieldEl.classList.add("pizzaBox");
         }
     })
 }
@@ -76,9 +76,9 @@ function renderMessage() {
         message.innerText = "I's a Tie!"
     }
     else if (winner) {
-        message.innerHTML = `<span style="color: ${players[winner]}">${players[winner].toUpperCase()}</span> Wins!`;
+        message.innerHTML = `<span>${players[winner].toUpperCase()}</span> Wins!`;
     } else {
-        message.innerHTML = `<span style="color: ${players[turn]}">${players[turn].toUpperCase()}'s</span> Turn!`;
+        message.innerHTML = `<span>${players[turn].toUpperCase()}'s</span> Turn!`;
     }
 }
 
@@ -141,7 +141,8 @@ function reset() {
     init();
     const squares = [...document.querySelectorAll('#board > div')];
     squares.forEach(field => {
-        field.classList.remove("blueBox")
+        field.classList.remove("avocadoBox");
+        field.classList.remove("pizzaBox")
     })
 }
 play.addEventListener('click', reset)
