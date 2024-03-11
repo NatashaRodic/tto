@@ -1,7 +1,7 @@
 html {
     height: 100%;
     width: 100%;
-    background-color: rgb(199, 194, 189);
+    background-color: rgb(245, 247, 251);
 }
 
 header {
@@ -20,8 +20,9 @@ header {
 }
 
 #board div {
-    border: pink 5px solid;
+    border: rgb(247, 207, 214) 2px solid;
     text-align: center;
+    border-radius: 10px;
 }
 
 .blueBox {
@@ -32,4 +33,10 @@ header {
 .pinkBox {
     background: url(images/x.png) no-repeat center;
     background-size: cover;
+}
+
+#board div:hover {
+    transform: scale(1.5);
+    border: none;
+    transition: all 0.5s;
 }
