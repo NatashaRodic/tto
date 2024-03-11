@@ -4,11 +4,15 @@ html {
     height: 100%;
     width: 100%;
     background-color: rgb(237, 237, 237);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(254, 249, 254, 1) 75%, rgba(242, 233, 244, 1) 100%);
+
 }
 
 header {
     padding-top: 50px;
     font-weight: 600;
+    color: rgb(60, 59, 59);
+    padding-bottom: 100px;
 }
 
 h1 {
@@ -24,7 +28,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
 
 }
@@ -55,13 +59,13 @@ button {
     margin-top: 50px;
     border: 1px solid red;
     background-color: #e2197d;
-    border-radius: 5px;
-    padding: 5px 15px;
-    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 5px 35px;
+    color: #e8f1fa;
     text-decoration: none;
     margin-bottom: 5px;
     /* display: inline-block; */
-    font-size: 1.1rem;
+    font-size: 2.1rem;
     transition: transform 0.8s ease-in-out;
 }
 
